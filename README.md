@@ -1,4 +1,4 @@
-# Introduction to Data Science
+# Population Genetics Project
 
 This repository contains the final project of the Population Genetics course (third block of courses of my MSc in Bioinformatics). 
 
