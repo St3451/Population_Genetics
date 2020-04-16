@@ -93,7 +93,7 @@ eigenstrat <- function(geno){
   # Standardize the data (centeter and then normalize). 173 SPs (col) x 95 (rows)
   M <- (geno - avg) / sqrt(freq * (1 - freq))
   
-  # I guess we find the eigenvectors and eigenvalues from cov matrix
+  # We find the eigenvectors and eigenvalues from cov matrix
   X <- t(M) %*% M # %*% is matrix moltiplication (transform M into a square matrix)
   X <- X / (sum(diag(X)) / (snp - 1))
   E <- eigen(X) 
@@ -442,7 +442,7 @@ WC84 <- function(x, pop) {
   h_avg <- apply(x == 1, 2, sum) / N
   # Nc (see page 1360 in wier and cockerhamm, 1984)
   n_c <- 1 / (npop - 1) * (N - sum(n ^ 2) / N)
-  # Variance betwen populations
+  # Variance between populations
   a <- n_avg / n_c * (s2 - (p_avg * (1 - p_avg) - (npop - 1) * s2 / npop - h_avg / 4) / 
                      (n_avg - 1))
   # Variance between individuals 
