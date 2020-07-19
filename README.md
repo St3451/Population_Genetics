@@ -1,6 +1,6 @@
 # Population Genetics Project
 
-This repository contains the final project of the Population Genetics course (third block of courses of my MSc in Bioinformatics). 
+This repository contains the final project of the [Population Genetics](https://kurser.ku.dk/course/nbia09043u) course (third block of courses of my MSc in Bioinformatics). 
 
 ## Splitting and admixture in the Grant's gazelle species complex
 
